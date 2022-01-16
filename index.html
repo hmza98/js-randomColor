@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random background generator</title>
+
+    <style>
+      .play-area {
+        margin: 20px;
+        height: 95vh;
+        background-color: black;
+      }
+      .random-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+      }
+
+      .random-btn button {
+        width: 130px;
+        height: 40px;
+        font-size: large;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: 500;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        color: white;
+      }
+    </style>
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="play-area" id="playArea">
+      <div class="random-btn">
+        <button onclick="generateRandomColor()">Click Me!!</button>
+      </div>
+    </div>
+  </body>
+</html>
